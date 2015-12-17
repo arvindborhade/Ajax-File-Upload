@@ -14,14 +14,14 @@
           <input id="input-700" name="images[]" type="file" multiple class="file-loading">            
     </body>
 	  
-    <script>
+     <script>
     $("#input-700").fileinput({
         uploadUrl: "upload.php", // server upload action
         uploadAsync: true,
         maxFileCount: 5,
-		maxFileSize: 4000,
-		allowedFileExtensions : ['jpg', 'png', 'pdf'],
-		overwriteInitial: false
+	maxFileSize: 4000,
+	allowedFileExtensions : ['jpg', 'png', 'pdf'],
+	overwriteInitial: false
     });
     </script>
 </html> 
