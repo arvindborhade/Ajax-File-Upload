@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- release v4.2.8, copyright 2014 - 2015 Kartik Visweswaran -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Krajee JQuery Plugins - &copy; Kartik</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/fileinput.js" type="text/javascript"></script>   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+          <input id="input-700" name="images[]" type="file" multiple class="file-loading">            
+    </body>
+	  
+    <script>
+    $("#input-700").fileinput({
+        uploadUrl: "upload.php", // server upload action
+        uploadAsync: true,
+        maxFileCount: 5,
+		maxFileSize: 4000,
+		allowedFileExtensions : ['jpg', 'png', 'pdf'],
+		overwriteInitial: false
+    });
+    </script>
+</html> 
